@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="favicon/favicon-form.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1 id="titulo">Formulário para estudantes de programação</h1>
+    <p id="subtitulo">Complete suas informações:</p>
+    <main>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset class="grupo">
+                <legend>Dados pessoais</legend>
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required minlength="5" maxlength="30" placeholder="Nome">
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required minlength="5" maxlength="30" placeholder="Sobrenome">
+                </div>
+                <div class="campo">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" name="email" id="email" autocomplete="email" required minlength="5" maxlength="50" placeholder="E-mail">
+                </div>
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="tel" name="telefone" id="telefone" autocomplete="tel" pattern="^\(\d{2})\d{4,5}-\d{4}$" placeholder="(xx) xxxx-xxxx" required>
+                </div>
+                <div class="campo"><strong>Qual seu sexo:</strong></div>
+                    <div>
+                        <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+                        <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+                    </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <legend>Curiosidades</legend>
+                <div class="campo"><strong>Quais tecnologias você já estudou:</strong></div>
+                <input class="check" type="checkbox" name="html" id="html"> <label for="html">HTML</label>
+                <input class="check" type="checkbox" name="css" id="css"> <label for="css">CSS</label>
+                <input class="check" type="checkbox" name="javascript" id="javascript"> <label for="javascript">JavaScript</label>
+                <input class="check" type="checkbox" name="python" id="python"> <label for="python">Python</label>
+                <input class="check" type="checkbox" name="java" id="java"> <label for="java">Java</label>
+                <input class="check" type="checkbox" name="c" id="c"> <label for="c">C</label>
+                <input class="check" type="checkbox" name="c#" id="c#"> <label for="c#">C#</label>
+                <input class="check" type="checkbox" name="php" id="php"> <label for="php">PHP</label>
+                <div class="campo">
+                    <label for="msg"><strong>Fale um pouco sobre suas experiências e projetos já desenvolvidos:</strong></label>
+                    <textarea name="msg" id="msg" style="width: 30em;" rows="10"></textarea>
+                </div>
+            </fieldset>
+        
+                <div class="botoes">
+                    <button type="submit" id="enviar" class="botao">Enviar</button>
+                    <button type="reset" id="limpar" class="botao">Limpar</button>
+                </div>
+        </form>
+    </main>
+
+</body>
+</html>
